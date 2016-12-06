@@ -15,11 +15,11 @@
 		C6BC6D301DF698AF00EA09C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BC6D2E1DF698AF00EA09C3 /* LaunchScreen.storyboard */; };
 		C6BC6D3B1DF698B000EA09C3 /* LSUDPDataDetailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D3A1DF698B000EA09C3 /* LSUDPDataDetailTests.m */; };
 		C6BC6D461DF698B000EA09C3 /* LSUDPDataDetailUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D451DF698B000EA09C3 /* LSUDPDataDetailUITests.m */; };
-		C6BC6D571DF698DA00EA09C3 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D541DF698DA00EA09C3 /* GCDAsyncSocket.m */; };
-		C6BC6D581DF698DA00EA09C3 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D561DF698DA00EA09C3 /* GCDAsyncUdpSocket.m */; };
 		C6BC6D601DF6991A00EA09C3 /* LSUDPSmartHome.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D5B1DF6991A00EA09C3 /* LSUDPSmartHome.m */; };
 		C6BC6D611DF6991A00EA09C3 /* NSData+LSUDPSmartHome.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D5D1DF6991A00EA09C3 /* NSData+LSUDPSmartHome.m */; };
 		C6BC6D621DF6991A00EA09C3 /* NSString+LSUDPSmartHome.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D5F1DF6991A00EA09C3 /* NSString+LSUDPSmartHome.m */; };
+		C6BC6DAE1DF6AD3D00EA09C3 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6DAB1DF6AD3D00EA09C3 /* GCDAsyncSocket.m */; };
+		C6BC6DAF1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6DAD1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,16 +56,16 @@
 		C6BC6D411DF698B000EA09C3 /* LSUDPDataDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSUDPDataDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BC6D451DF698B000EA09C3 /* LSUDPDataDetailUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSUDPDataDetailUITests.m; sourceTree = "<group>"; };
 		C6BC6D471DF698B000EA09C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6BC6D531DF698DA00EA09C3 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
-		C6BC6D541DF698DA00EA09C3 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		C6BC6D551DF698DA00EA09C3 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		C6BC6D561DF698DA00EA09C3 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		C6BC6D5A1DF6991A00EA09C3 /* LSUDPSmartHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUDPSmartHome.h; sourceTree = "<group>"; };
 		C6BC6D5B1DF6991A00EA09C3 /* LSUDPSmartHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUDPSmartHome.m; sourceTree = "<group>"; };
 		C6BC6D5C1DF6991A00EA09C3 /* NSData+LSUDPSmartHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LSUDPSmartHome.h"; sourceTree = "<group>"; };
 		C6BC6D5D1DF6991A00EA09C3 /* NSData+LSUDPSmartHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LSUDPSmartHome.m"; sourceTree = "<group>"; };
 		C6BC6D5E1DF6991A00EA09C3 /* NSString+LSUDPSmartHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LSUDPSmartHome.h"; sourceTree = "<group>"; };
 		C6BC6D5F1DF6991A00EA09C3 /* NSString+LSUDPSmartHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSUDPSmartHome.m"; sourceTree = "<group>"; };
+		C6BC6DAA1DF6AD3D00EA09C3 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		C6BC6DAB1DF6AD3D00EA09C3 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		C6BC6DAC1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		C6BC6DAD1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +117,6 @@
 			isa = PBXGroup;
 			children = (
 				C6BC6D591DF6990B00EA09C3 /* LSUDPDataDetail */,
-				C6BC6D531DF698DA00EA09C3 /* GCDAsyncSocket.h */,
-				C6BC6D541DF698DA00EA09C3 /* GCDAsyncSocket.m */,
-				C6BC6D551DF698DA00EA09C3 /* GCDAsyncUdpSocket.h */,
-				C6BC6D561DF698DA00EA09C3 /* GCDAsyncUdpSocket.m */,
 				C6BC6D231DF698AF00EA09C3 /* AppDelegate.h */,
 				C6BC6D241DF698AF00EA09C3 /* AppDelegate.m */,
 				C6BC6D261DF698AF00EA09C3 /* ViewController.h */,
@@ -163,6 +159,7 @@
 		C6BC6D591DF6990B00EA09C3 /* LSUDPDataDetail */ = {
 			isa = PBXGroup;
 			children = (
+				C6BC6DA91DF6AD3D00EA09C3 /* GCDAsyncSocket */,
 				C6BC6D5A1DF6991A00EA09C3 /* LSUDPSmartHome.h */,
 				C6BC6D5B1DF6991A00EA09C3 /* LSUDPSmartHome.m */,
 				C6BC6D5C1DF6991A00EA09C3 /* NSData+LSUDPSmartHome.h */,
@@ -171,6 +168,17 @@
 				C6BC6D5F1DF6991A00EA09C3 /* NSString+LSUDPSmartHome.m */,
 			);
 			path = LSUDPDataDetail;
+			sourceTree = "<group>";
+		};
+		C6BC6DA91DF6AD3D00EA09C3 /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				C6BC6DAA1DF6AD3D00EA09C3 /* GCDAsyncSocket.h */,
+				C6BC6DAB1DF6AD3D00EA09C3 /* GCDAsyncSocket.m */,
+				C6BC6DAC1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.h */,
+				C6BC6DAD1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCDAsyncSocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,13 +317,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6BC6D571DF698DA00EA09C3 /* GCDAsyncSocket.m in Sources */,
-				C6BC6D581DF698DA00EA09C3 /* GCDAsyncUdpSocket.m in Sources */,
 				C6BC6D611DF6991A00EA09C3 /* NSData+LSUDPSmartHome.m in Sources */,
 				C6BC6D281DF698AF00EA09C3 /* ViewController.m in Sources */,
 				C6BC6D251DF698AF00EA09C3 /* AppDelegate.m in Sources */,
 				C6BC6D221DF698AF00EA09C3 /* main.m in Sources */,
+				C6BC6DAF1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m in Sources */,
 				C6BC6D601DF6991A00EA09C3 /* LSUDPSmartHome.m in Sources */,
+				C6BC6DAE1DF6AD3D00EA09C3 /* GCDAsyncSocket.m in Sources */,
 				C6BC6D621DF6991A00EA09C3 /* NSString+LSUDPSmartHome.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +562,7 @@
 				C6BC6D4C1DF698B000EA09C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6BC6D4D1DF698B000EA09C3 /* Build configuration list for PBXNativeTarget "LSUDPDataDetailTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +571,7 @@
 				C6BC6D4F1DF698B000EA09C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6BC6D501DF698B000EA09C3 /* Build configuration list for PBXNativeTarget "LSUDPDataDetailUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +580,7 @@
 				C6BC6D521DF698B000EA09C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
