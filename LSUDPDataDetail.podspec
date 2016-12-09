@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
     s.license      = "MIT"
     s.author       = { "CoderLSWang" => "709926980@qq.com" }
     s.platform     = :ios
-    s.ios.deployment_target = "7.0"
+    s.ios.deployment_target = "8.0"
     s.source       = { :git => "https://github.com/CoderLSWang/LSUDPDataDetail.git", :tag => "0.0.4" }
     s.source_files  = "LSUDPDataDetail/LSUDPDataDetail/**/*.{h,m}"
     s.requires_arc = true
