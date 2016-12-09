@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
     s.source       = { :git => "https://github.com/CoderLSWang/LSUDPDataDetail.git", :tag => "0.0.4" }
     s.source_files  = "LSUDPDataDetail/LSUDPDataDetail/*.{h,m}"
     s.requires_arc = true
-
+    s.dependency 'CocoaAsyncSocket', '~> 7.5.1'
 
 end
