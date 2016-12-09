@@ -1,14 +1,14 @@
 //
-//  NSData+LSUDPSmartHome.m
-//  LSUDPSmarHome
+//  NSData+LSUDPDataDetail.m
+//  LSUDPDataDetail
 //
-//  Created by 王良山 on 2016/11/30.
+//  Created by 王良山 on 2016/12/9.
 //  Copyright © 2016年 liangshanw. All rights reserved.
 //
 
-#import "NSData+LSUDPSmartHome.h"
+#import "NSData+LSUDPDataDetail.h"
 
-@implementation NSData (LSUDPSmartHome)
+@implementation NSData (LSUDPDataDetail)
 
 
 + (NSString *)convertDataToHexStr:(NSData *)data {

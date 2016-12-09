@@ -1,14 +1,15 @@
 //
-//  NSString+LSUDPSmartHome.h
-//  LSUDPSmarHome
+//  NSString+LSUDPDataDetail.h
+//  LSUDPDataDetail
 //
-//  Created by 王良山 on 2016/11/30.
+//  Created by 王良山 on 2016/12/9.
 //  Copyright © 2016年 liangshanw. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (LSUDPSmartHome)
+@interface NSString (LSUDPDataDetail)
+
 
 + (NSString *)getDecStrFromHexStr:(NSString *)HexStr;
 
@@ -17,5 +18,6 @@
 + (NSString *)removeAllEmptyString:(NSString *)string;
 
 + (NSString *)removeAllHexheadString:(NSString *)string;
+
 
 @end

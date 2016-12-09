@@ -1,12 +1,13 @@
 //
-//  LSUDPSmartHome.m
-//  LSUDPSmarHome
+//  LSUDPDataDetail.m
+//  LSUDPDataDetail
 //
-//  Created by 王良山 on 2016/11/29.
+//  Created by 王良山 on 2016/12/9.
 //  Copyright © 2016年 liangshanw. All rights reserved.
 //
 
-#import "LSUDPSmartHome.h"
+#import "LSUDPDataDetail.h"
+
 
 #define DEFINE_SHARED_INSTANCE_USING_BLOCK(block)               \
 static dispatch_once_t pred = 0;                                \
@@ -16,13 +17,14 @@ _sharedObject = block();                                        \
 });                                                             \
 return _sharedObject;
 
-@interface LSUDPSmartHome ()
+@interface LSUDPDataDetail ()
 
 @property (strong, nonatomic)GCDAsyncUdpSocket * udpSocket;
 
 @end
 
-@implementation LSUDPSmartHome
+@implementation LSUDPDataDetail
+
 
 + (id)sharedInstance {
     DEFINE_SHARED_INSTANCE_USING_BLOCK(^{
@@ -41,7 +43,7 @@ return _sharedObject;
     }
     hexString = [NSString removeAllEmptyString:hexString];
     hexString = [NSString removeAllHexheadString:hexString];
-
+    
     if (hexString.length % 2 == 1) NSLog(@"Convert hexadecimal string to data of byte array is failed, please check out the hexadecimal string");
     
     Byte commandByte[hexString.length / 2];
@@ -60,7 +62,7 @@ return _sharedObject;
 ///convert the data to hexadecimal string / 将data转换为十六进制字符串
 +(NSString *)convertDataToHexDataStr:(NSData *)data
 {
-   return [NSData convertDataToHexStr:data];
+    return [NSData convertDataToHexStr:data];
 }
 
 ///convert the data to decimal string / 将data转换为十进制字符串
@@ -98,7 +100,7 @@ return _sharedObject;
 ///cut out hexadecimal string from itself / 从HexString中截取出十六进制的字符串
 +(NSString *)getHexStringFromHexString:(NSString *)hexString withRange:(NSRange)range
 {
-   return [hexString substringWithRange:range];
+    return [hexString substringWithRange:range];
 }
 
 ///convert hexadecimal string to decimal strings / 将16进制字符串转10进制字符串

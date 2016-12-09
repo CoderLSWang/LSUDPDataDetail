@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LSUDPSmartHome.h"
+#import "LSUDPDataDetail.h"
 
 
 #define socketHostStr @"192.168.23.525"
@@ -40,7 +40,7 @@
     //_udpSocket对象从这个方法获取
     //调用这个方法会绑定端口，UDP不需要连接，这一步操作完成即可收发指令了
     
-    _udpSocket = [[LSUDPSmartHome sharedInstance] bindToPortWithsocketHost:socketHostStr andservicePort:[NSString stringWithFormat:@"%@",servicePortStr].intValue andUdpSocketDelegate:self];
+    _udpSocket = [[LSUDPDataDetail sharedInstance] bindToPortWithsocketHost:socketHostStr andservicePort:[NSString stringWithFormat:@"%@",servicePortStr].intValue andUdpSocketDelegate:self];
     
 }
 
@@ -63,7 +63,7 @@
     //智能设备中的节点地址和传感器不是绑定一起的，如果某个传感器的节点底盘换了，那么这个传感器的地址也换了，所以这里是动态的
     
     NSString *addressHexStr = @"333333333333333303d0";
-    NSData *addressData = [LSUDPSmartHome commandByteDataFromHexString:addressHexStr];
+    NSData *addressData = [LSUDPDataDetail commandByteDataFromHexString:addressHexStr];
     [self combustibleGasCommandData:addressData];
     
     
@@ -160,21 +160,21 @@ withFilterContext:(nullable id)filterContext
     NSLog(@"The received data / 接收到的数据%@",data);
     
     //Hexadecimal string data type / 16进制字符串类型的data
-    NSString *dataHexStr = [LSUDPSmartHome convertDataToHexDataStr:data];
+    NSString *dataHexStr = [LSUDPDataDetail convertDataToHexDataStr:data];
     NSLog(@"dataHexStr = %@",dataHexStr);
     _outPutTextView.text = dataHexStr;
     
     //Get hexadecimal device ID, the range u need according to your company's agreement to set/ 获取16进制设备ID,range需要根据自己公司的协议或具体的data值来截取
-    NSString *DeviceIdHexStr = [LSUDPSmartHome getHexStringFromData:data withRange:NSMakeRange(54, 2)];
+    NSString *DeviceIdHexStr = [LSUDPDataDetail getHexStringFromData:data withRange:NSMakeRange(54, 2)];
     NSLog(@"DeviceIdHexStr = %@",DeviceIdHexStr);
     
-    NSString *DeviceIdDecStr = [LSUDPSmartHome getDecStringFromData:data withRange:NSMakeRange(54, 2)];
+    NSString *DeviceIdDecStr = [LSUDPDataDetail getDecStringFromData:data withRange:NSMakeRange(54, 2)];
     NSLog(@"DeviceIdDecStr = %@",DeviceIdDecStr);
     
     
     
     //get device address / 获取设备地址
-    NSString *addressHexStr = [LSUDPSmartHome getHexStringFromData:data withRange:NSMakeRange(8, 20)];
+    NSString *addressHexStr = [LSUDPDataDetail getHexStringFromData:data withRange:NSMakeRange(8, 20)];
     NSLog(@"addressHexStr = %@",addressHexStr);
     
     
@@ -194,7 +194,7 @@ withFilterContext:(nullable id)filterContext
     
     //Selection of sensors, when the equipment send collectd data / 设备发送来采集的数据时，对传感器的甄选
     
-    NSString *commandHexStr = [LSUDPSmartHome getHexStringFromData:data withRange:NSMakeRange(2, 6)];
+    NSString *commandHexStr = [LSUDPDataDetail getHexStringFromData:data withRange:NSMakeRange(2, 6)];
     if ([commandHexStr isEqualToString:@"545243"]) {//TRC ：The command header / 命令头
         NSLog(@"dataHexStr = %@",dataHexStr);
     }

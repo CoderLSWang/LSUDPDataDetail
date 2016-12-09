@@ -1,26 +1,28 @@
 //
-//  LSUDPSmartHome.h
-//  LSUDPSmarHome
+//  LSUDPDataDetail.h
+//  LSUDPDataDetail
 //
-//  Created by 王良山 on 2016/11/29.
+//  Created by 王良山 on 2016/12/9.
 //  Copyright © 2016年 liangshanw. All rights reserved.
 //
-//Tip:This component is developmented based on GCDAsyncUdpSocket library, before useing it, please import GCDAsyncSocket and GCDAsyncUdpSocket files, or install GCDAsyncUdpSocket library
+//Tip:This component is developmented based on GCDAsyncUdpSocket library,Use pod to import CocoaAsyncSocket file will be imported together, if the file repeat ,please delete it
 //UDP instruction contains the communication address, device Id, send data, etc.Specific please refer to my blog about instruction interpretations: （I donot know whice developer platform I should choose. If you know, please recommend a developer platform in the United States）
 
-//注意：此组件是基于GCDAsyncUdpSocket框架开发，使用前请导入GCDAsyncSocket和GCDAsyncUdpSocket文件，或安装GCDAsyncUdpSocket框架
+//注意：此组件是基于CocoaAsyncSocket框架开发，使用pod导入时，CocoaAsyncSocket文件也会被一起导入进来，如有重复请删除
 //UDP指令里面包含通信的地址，设备Id，发送的数据等。具体指令协议解读请参阅我的博客：http://www.jianshu.com/users/5df251480905/latest_articles
 
 
+  //https://github.com/CoderLSWang/LSUDPDataDetail
 #import <Foundation/Foundation.h>
 
 //udp
 #import "GCDAsyncUdpSocket.h"
 #import "GCDAsyncSocket.h"
-#import "NSData+LSUDPSmartHome.h"
-#import "NSString+LSUDPSmartHome.h"
+#import "NSData+LSUDPDataDetail.h"
+#import "NSString+LSUDPDataDetail.h"
 
-@interface LSUDPSmartHome : NSObject
+@interface LSUDPDataDetail : NSObject
+
 
 + (id)sharedInstance;
 
@@ -58,11 +60,6 @@
 ///cut out hexadecimal string from itself / 从HexString中截取出十六进制的字符串
 +(NSString *)getHexStringFromHexString:(NSString *)hexString withRange:(NSRange)range;
 
+
+
 @end
-
-
-
-
-
-
-
