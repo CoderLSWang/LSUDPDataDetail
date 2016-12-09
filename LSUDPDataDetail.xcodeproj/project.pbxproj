@@ -15,11 +15,11 @@
 		C6BC6D301DF698AF00EA09C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6BC6D2E1DF698AF00EA09C3 /* LaunchScreen.storyboard */; };
 		C6BC6D3B1DF698B000EA09C3 /* LSUDPDataDetailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D3A1DF698B000EA09C3 /* LSUDPDataDetailTests.m */; };
 		C6BC6D461DF698B000EA09C3 /* LSUDPDataDetailUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6D451DF698B000EA09C3 /* LSUDPDataDetailUITests.m */; };
-		C6BC6DAE1DF6AD3D00EA09C3 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6DAB1DF6AD3D00EA09C3 /* GCDAsyncSocket.m */; };
-		C6BC6DAF1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6DAD1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m */; };
 		C6BC6E731DFA608400EA09C3 /* LSUDPDataDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6E721DFA608400EA09C3 /* LSUDPDataDetail.m */; };
 		C6BC6E761DFA60A500EA09C3 /* NSData+LSUDPDataDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6E751DFA60A500EA09C3 /* NSData+LSUDPDataDetail.m */; };
 		C6BC6E791DFA60B200EA09C3 /* NSString+LSUDPDataDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BC6E781DFA60B200EA09C3 /* NSString+LSUDPDataDetail.m */; };
+		C6E76A461DFA77F500045A76 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E76A431DFA77F500045A76 /* GCDAsyncSocket.m */; };
+		C6E76A471DFA77F500045A76 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6E76A451DFA77F500045A76 /* GCDAsyncUdpSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,16 +56,16 @@
 		C6BC6D411DF698B000EA09C3 /* LSUDPDataDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSUDPDataDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BC6D451DF698B000EA09C3 /* LSUDPDataDetailUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSUDPDataDetailUITests.m; sourceTree = "<group>"; };
 		C6BC6D471DF698B000EA09C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6BC6DAA1DF6AD3D00EA09C3 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
-		C6BC6DAB1DF6AD3D00EA09C3 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
-		C6BC6DAC1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
-		C6BC6DAD1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		C6BC6E711DFA608400EA09C3 /* LSUDPDataDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUDPDataDetail.h; sourceTree = "<group>"; };
 		C6BC6E721DFA608400EA09C3 /* LSUDPDataDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUDPDataDetail.m; sourceTree = "<group>"; };
 		C6BC6E741DFA60A500EA09C3 /* NSData+LSUDPDataDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+LSUDPDataDetail.h"; sourceTree = "<group>"; };
 		C6BC6E751DFA60A500EA09C3 /* NSData+LSUDPDataDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+LSUDPDataDetail.m"; sourceTree = "<group>"; };
 		C6BC6E771DFA60B200EA09C3 /* NSString+LSUDPDataDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LSUDPDataDetail.h"; sourceTree = "<group>"; };
 		C6BC6E781DFA60B200EA09C3 /* NSString+LSUDPDataDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LSUDPDataDetail.m"; sourceTree = "<group>"; };
+		C6E76A421DFA77F500045A76 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		C6E76A431DFA77F500045A76 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		C6E76A441DFA77F500045A76 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		C6E76A451DFA77F500045A76 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,7 @@
 		C6BC6D1F1DF698AF00EA09C3 /* LSUDPDataDetail */ = {
 			isa = PBXGroup;
 			children = (
+				C6E76A411DFA77F500045A76 /* GCDAsyncSocket */,
 				C6BC6D591DF6990B00EA09C3 /* LSUDPDataDetail */,
 				C6BC6D231DF698AF00EA09C3 /* AppDelegate.h */,
 				C6BC6D241DF698AF00EA09C3 /* AppDelegate.m */,
@@ -159,7 +160,6 @@
 		C6BC6D591DF6990B00EA09C3 /* LSUDPDataDetail */ = {
 			isa = PBXGroup;
 			children = (
-				C6BC6DA91DF6AD3D00EA09C3 /* GCDAsyncSocket */,
 				C6BC6E711DFA608400EA09C3 /* LSUDPDataDetail.h */,
 				C6BC6E721DFA608400EA09C3 /* LSUDPDataDetail.m */,
 				C6BC6E741DFA60A500EA09C3 /* NSData+LSUDPDataDetail.h */,
@@ -170,13 +170,13 @@
 			path = LSUDPDataDetail;
 			sourceTree = "<group>";
 		};
-		C6BC6DA91DF6AD3D00EA09C3 /* GCDAsyncSocket */ = {
+		C6E76A411DFA77F500045A76 /* GCDAsyncSocket */ = {
 			isa = PBXGroup;
 			children = (
-				C6BC6DAA1DF6AD3D00EA09C3 /* GCDAsyncSocket.h */,
-				C6BC6DAB1DF6AD3D00EA09C3 /* GCDAsyncSocket.m */,
-				C6BC6DAC1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.h */,
-				C6BC6DAD1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m */,
+				C6E76A421DFA77F500045A76 /* GCDAsyncSocket.h */,
+				C6E76A431DFA77F500045A76 /* GCDAsyncSocket.m */,
+				C6E76A441DFA77F500045A76 /* GCDAsyncUdpSocket.h */,
+				C6E76A451DFA77F500045A76 /* GCDAsyncUdpSocket.m */,
 			);
 			path = GCDAsyncSocket;
 			sourceTree = "<group>";
@@ -321,9 +321,9 @@
 				C6BC6D251DF698AF00EA09C3 /* AppDelegate.m in Sources */,
 				C6BC6D221DF698AF00EA09C3 /* main.m in Sources */,
 				C6BC6E761DFA60A500EA09C3 /* NSData+LSUDPDataDetail.m in Sources */,
+				C6E76A471DFA77F500045A76 /* GCDAsyncUdpSocket.m in Sources */,
 				C6BC6E731DFA608400EA09C3 /* LSUDPDataDetail.m in Sources */,
-				C6BC6DAF1DF6AD3D00EA09C3 /* GCDAsyncUdpSocket.m in Sources */,
-				C6BC6DAE1DF6AD3D00EA09C3 /* GCDAsyncSocket.m in Sources */,
+				C6E76A461DFA77F500045A76 /* GCDAsyncSocket.m in Sources */,
 				C6BC6E791DFA60B200EA09C3 /* NSString+LSUDPDataDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
