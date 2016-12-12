@@ -5,14 +5,12 @@
 //  Created by 王良山 on 2016/12/9.
 //  Copyright © 2016年 liangshanw. All rights reserved.
 //
-//Tip:This component is developmented based on GCDAsyncUdpSocket library,Use pod to import CocoaAsyncSocket file will be imported together, if the file repeat ,please delete it
 //UDP instruction contains the communication address, device Id, send data, etc.Specific please refer to my blog about instruction interpretations: （I donot know whice developer platform I should choose. If you know, please recommend a developer platform in the United States）
 
-//注意：此组件是基于CocoaAsyncSocket框架开发，使用pod导入时，CocoaAsyncSocket文件也会被一起导入进来，如有重复请删除
 //UDP指令里面包含通信的地址，设备Id，发送的数据等。具体指令协议解读请参阅我的博客：http://www.jianshu.com/users/5df251480905/latest_articles
 
+//GitHub: https://github.com/CoderLSWang/LSUDPDataDetail
 
-  //https://github.com/CoderLSWang/LSUDPDataDetail
 #import <Foundation/Foundation.h>
 
 //udp
