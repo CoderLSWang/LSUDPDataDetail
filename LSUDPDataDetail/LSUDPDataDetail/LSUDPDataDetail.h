@@ -12,12 +12,12 @@
 //GitHub: https://github.com/CoderLSWang/LSUDPDataDetail
 
 #import <Foundation/Foundation.h>
-
-//udp
-#import "GCDAsyncUdpSocket.h"
-#import "GCDAsyncSocket.h"
 #import "NSData+LSUDPDataDetail.h"
 #import "NSString+LSUDPDataDetail.h"
+
+@protocol LSAsyncUdpSocketDelegate <NSObject>
+
+@end
 
 @interface LSUDPDataDetail : NSObject
 
@@ -26,10 +26,6 @@
 
 #pragma mark --------------------
 #pragma mark Initialization method
-///Binding and initialize the UDP port, get UdpSocket object / 绑定和初始化UDP端口，获取UdpSocket对象
-- (GCDAsyncUdpSocket *)bindToPortWithsocketHost:(NSString *)socketHost andservicePort:(uint16_t)servicePort andUdpSocketDelegate:(id<GCDAsyncUdpSocketDelegate>)delegate;
-
-
 ///convert the data to hexadecimal string / 将data转换为十六进制字符串
 +(NSString *)convertDataToHexDataStr:(NSData *)data;
 

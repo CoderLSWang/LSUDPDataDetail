@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "LSUDPDataDetail.h"
+#import "GCDAsyncUdpSocket.h"
+#import "GCDAsyncSocket.h"
 
 
 #define socketHostStr @"192.168.23.525"
@@ -29,7 +31,6 @@
     
 }
 
-
 -(void)viewWillAppear:(BOOL)animated
 {
     
@@ -40,7 +41,7 @@
     //_udpSocket对象从这个方法获取
     //调用这个方法会绑定端口，UDP不需要连接，这一步操作完成即可收发指令了
     
-    _udpSocket = [[LSUDPDataDetail sharedInstance] bindToPortWithsocketHost:socketHostStr andservicePort:[NSString stringWithFormat:@"%@",servicePortStr].intValue andUdpSocketDelegate:self];
+    _udpSocket = [self bindToPortWithsocketHost:socketHostStr andservicePort:[NSString stringWithFormat:@"%@",servicePortStr].intValue andUdpSocketDelegate:self];
     
 }
 
@@ -51,6 +52,32 @@
     
     NSLog(@"click send button");
     [self sendCombustibleGasCommand];
+}
+
+#pragma mark --------------------
+#pragma mark 绑定传感器
+//if u binded successed, u will get a tip with a error of binding. But the port has been binding. So please ignore the error
+//If the first binding errors, said there was no binding is successful, please check your code or equipments
+//第一次绑定成功后再次绑定便会提示绑定错误，不过此时端口已经绑定好了，不用理会
+//如果第一次绑定提示错误，则表示没有绑定成功，请排查原因
+
+///Binding and initialize the UDP port, get UdpSocket object / 绑定和初始化UDP端口，获取UdpSocket对象
+- (GCDAsyncUdpSocket *)bindToPortWithsocketHost:(NSString *)socketHost andservicePort:(uint16_t)servicePort andUdpSocketDelegate:(id<GCDAsyncUdpSocketDelegate>)delegate
+{
+    
+    _udpSocket = [[GCDAsyncUdpSocket alloc]initWithDelegate:delegate delegateQueue:dispatch_get_main_queue()];
+    
+    NSError *error = nil;
+    [_udpSocket bindToPort :servicePort error:&error];
+    if(error) NSLog(@"LSUDPSmartHome.m ---error in bindToPort---");
+    
+    NSData *randomData = [@"fefefefe" dataUsingEncoding:NSUTF8StringEncoding];
+    [_udpSocket sendData:randomData toHost:socketHost port:servicePort withTimeout:-1 tag:0];
+    //Receiving mode: Have been receiving
+    [_udpSocket beginReceiving:&error];
+    
+    return _udpSocket;
+    
 }
 
 
