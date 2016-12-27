@@ -5,7 +5,7 @@
 //  Created by 王良山 on 2016/12/9.
 //  Copyright © 2016年 liangshanw. All rights reserved.
 //
-//UDP instruction contains the communication address, device Id, send data, etc.Specific please refer to my blog about instruction interpretations: （I donot know whice developer platform I should choose. If you know, please recommend a developer platform in the United States）
+//UDP instruction contains the communication address, device Id, send data, etc.Specific please my blog: http://www.jianshu.com/users/5df251480905/latest_articles
 
 //UDP指令里面包含通信的地址，设备Id，发送的数据等。具体指令协议解读请参阅我的博客：http://www.jianshu.com/users/5df251480905/latest_articles
 

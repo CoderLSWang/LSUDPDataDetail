@@ -82,7 +82,7 @@
 
 
 #pragma mark --------------------
-#pragma mark 指令的收发
+#pragma mark 指令的发送
 - (void)sendCombustibleGasCommand
 {
     //address:333333333333333303d0
